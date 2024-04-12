@@ -8,8 +8,20 @@
     
 </head>
 <body>
-    <p>ola mundo</p>
 
+<div class="container-anotacoes">
+   <!-- add <div class="anotacao-single"><textarea placeholder="Sua nova anotação..."></textarea></div> -->
+</div><!--container-anotacoes-->
+
+<div class="btn-add"><b>+</b></div>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(function(){
+        $('.btn-add').click(function(){
+            var el = '  <div class="anotacao-single"><textarea placeholder="Sua nova anotação..."></textarea></div>';
+                $('.container-anotacoes').append(el);
+        })
+    })
+</script>
 </body>
 </html>
